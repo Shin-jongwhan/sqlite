@@ -15,8 +15,8 @@
 ## db 생성 방법
 ### * mysql과 똑같이 쿼리문의 기능들은 대소문자 상관 없이 사용할 수 있다(컬럼, 값 이런 것은 구분해야 함).
 ```
-# db 생성
-.open Test.db
+# db 생성. 없으면 새로 생성하고 있으면 있는 것을 불러온다.
+.open test.db
 
 # create table
 create table test(
@@ -33,5 +33,9 @@ insert into test values(1, 'test');
 # select(조회)
 select * from test;
 ```
+### <br/>
+
+### 그리고 종료하면 sqlite3.exe가 있는 같은 폴더 안에 test.db가 생성되어 있을 것이다.
+#### ![image](https://github.com/Shin-jongwhan/sqlite/assets/62974484/0909105a-3bb9-4022-a557-81d505ecb04d)
 ### <br/><br/><br/>
 
